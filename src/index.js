@@ -265,8 +265,12 @@ function setEventListeners(moles) {
 */
 function setDuration(duration) {
   time = duration;
+  timerDisplay.textContent = time; // Update the timer display
   return time;
 }
+
+// Call setDuration(10) to set the timer to 10 seconds
+setDuration(10);
 
 /**
 *
@@ -290,6 +294,7 @@ function startGame(){
   setDuration(10);
   showUp();
   setEventListeners(moles); // Call setEventListeners() to add click event listeners to moles
+  startTimer(); // Start the timer
   return "game started";
 }
 
