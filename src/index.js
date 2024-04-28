@@ -291,6 +291,7 @@ function stopGame(){
 *
 */
 function startGame(){
+  clearScore(); // Reset the score to zero
   setDuration(10);
   showUp();
   setEventListeners(moles); // Call setEventListeners() to add click event listeners to moles
