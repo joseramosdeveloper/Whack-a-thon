@@ -279,7 +279,7 @@ setDuration(10);
 *
 */
 function stopGame(){
-  // stopAudio(song);  //optional
+  stopAudio(song);  //optional
   clearInterval(timer);
   return "game stopped";
 }
